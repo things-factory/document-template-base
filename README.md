@@ -4,6 +4,10 @@
 - [@things-factory/document-template-service](https://github.com/things-factory/document-template-service)
 
 ## How to use
+1. install    
+    ```bash
+    yarn add @things-factory/document-template-base
+    ```
 1. run [@things-factory/document-template-service](https://github.com/things-factory/document-template-service)
 1. add configuration into config.[production|development].js    
     ```js
@@ -12,7 +16,7 @@
 1. request report result
     - way 1. using template string    
     ```js
-    import { reportString2html } from './controllers'
+    import { reportString2html } from '@things-factory/document-template-base'
     
     ...
     
@@ -25,7 +29,7 @@
     ```
     - way 2. using local template file path
     ```js
-    import { reportPath2html } from './controllers'
+    import { reportPath2html } from '@things-factory/document-template-base'
     
     ...
     
@@ -38,7 +42,7 @@
     ```
     - way 3. using template file url
     ```js
-    import { reportUrl2html } from './controllers'
+    import { reportUrl2html } from '@things-factory/document-template-base'
     
     ...
     
