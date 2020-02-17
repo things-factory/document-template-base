@@ -15,41 +15,41 @@
     ```
 1. request report result
     - way 1. using template string    
-    ```js
-    import { reportString2html } from '@things-factory/document-template-base'
-    
-    ...
-    
-    const html = await reportString2html({
-      reportTemplateString: reportXML,
-      data: {} // object data
-    })
-    
-    ...
-    ```
+      ```js
+      import { reportString2html } from '@things-factory/document-template-base'
+
+      ...
+
+      const html = await reportString2html({
+        reportTemplateString: reportXML,
+        data: {} // object data
+      })
+
+      ...
+      ```
     - way 2. using local template file path
-    ```js
-    import { reportPath2html } from '@things-factory/document-template-base'
-    
-    ...
-    
-    const html = await reportPath2html({
-      reportFilePath: reportFilePath,
-      data: {} // object data
-    })
-    
-    ...
-    ```
+      ```js
+      import { reportPath2html } from '@things-factory/document-template-base'
+
+      ...
+
+      const html = await reportPath2html({
+        reportFilePath: reportFilePath,
+        data: {} // object data
+      })
+
+      ...
+      ```
     - way 3. using template file url
-    ```js
-    import { reportUrl2html } from '@things-factory/document-template-base'
-    
-    ...
-    
-    const html = await reportUrl2html({
-      reportUrl: reportURL,
-      data: {} // object data
-    })
-    
-    ...
-    ```
+      ```js
+      import { reportUrl2html } from '@things-factory/document-template-base'
+
+      ...
+
+      const html = await reportUrl2html({
+        reportUrl: reportURL,
+        data: {} // object data
+      })
+
+      ...
+      ```
